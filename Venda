@@ -1,0 +1,39 @@
+public class Produto {
+
+ private int codigo;
+private String nome;
+private double valor;
+
+public static void main(String[] args) {
+
+  Produto produto = new Produto();
+
+  produto.codigo = 1;
+  produto.nome = "refrigerante";
+  produto.valor = 2.0;
+
+  produto.aplicaImposto(0.10);
+
+  System.out.println("código do produto: " + produto.codigo);
+  System.out.println("nome do produto: " + produto.nome);
+  System.out.println("valor do produto " + produto.valor);
+
+  Produto produto2 = new Produto();
+
+  produto2.codigo = 2;
+  produto2.nome = "suco";
+  produto2.valor = 1.0;
+
+  produto2.aplicaImposto(0.15);
+
+  System.out.println("código do produto: " + produto2.codigo);
+  System.out.println("nome do produto: " + produto2.nome);
+  System.out.println("valor do produto " + produto2.valor);
+
+ }
+
+private void aplicaImposto(double d) {
+	
+	
+}
+}
